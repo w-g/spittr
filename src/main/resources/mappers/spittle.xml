@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spittr.repository.mybatis.mapper.SpittleMapper">
+
+  <select id="getSpittle" resultType="Spittle">
+    select * from spittle where id = #{spittleId}
+  </select>
+  
+  <select id="getSpittles" resultType="Spittle">
+    select * from spittle where id &lt; 10 order by id desc limit 4
+  </select>
+  
+</mapper>

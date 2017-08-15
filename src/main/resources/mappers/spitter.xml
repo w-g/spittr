@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spittr.repository.mybatis.mapper.SpitterMapper">
+
+  <insert id="insertSpitter" parameterType="Spitter">
+    insert into spitter(id, firstName, lastName, username, password) values(#{id}, #{firstName}, #{lastName}, #{username}, #{password})
+  </insert>
+  
+  <select id="getSpitter" resultType="Spitter">
+    select * from spitter where username = #{username}
+  </select>
+  
+</mapper>

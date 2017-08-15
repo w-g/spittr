@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+  <!-- <properties resource="application.properties">
+    <property name="database.username" value="root" />
+  </properties> -->
+
+  <settings>
+    <setting name="cacheEnabled" value="false" />
+    <setting name="logImpl" value="SLF4J"/>
+    <!-- <setting name="lazyLoadingEnabled" value="true" />
+    <setting name="multipleResultSetsEnabled" value="true" />
+    <setting name="useColumnLabel" value="true" />
+    <setting name="useGeneratedKeys" value="false" />
+    <setting name="autoMappingBehavior" value="PARTIAL" />
+    <setting name="autoMappingUnknownColumnBehavior" value="WARNING" />
+    <setting name="defaultExecutorType" value="SIMPLE" />
+    <setting name="defaultStatementTimeout" value="25" />
+    <setting name="defaultFetchSize" value="100" />
+    <setting name="safeRowBoundsEnabled" value="false" />
+    <setting name="mapUnderscoreToCamelCase" value="false" />
+    <setting name="localCacheScope" value="SESSION" />
+    <setting name="jdbcTypeForNull" value="OTHER" />
+    <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString" /> -->
+  </settings>
+
+  <typeAliases>
+    <typeAlias alias="Spittle" type="spittr.Spittle" />
+    <typeAlias alias="Spitter" type="spittr.Spitter" />
+    <!-- <typeAlias alias="Blog" type="domain.blog.Blog" />
+    <typeAlias alias="Comment" type="domain.blog.Comment" />
+    <typeAlias alias="Post" type="domain.blog.Post" />
+    <typeAlias alias="Section" type="domain.blog.Section" />
+    <typeAlias alias="Tag" type="domain.blog.Tag" />
+    <package name="domain.blog" /> -->
+  </typeAliases>
+
+  <!-- <typeHandlers>
+    <typeHandler handler="org.mybatis.example.ExampleTypeHandler" />
+  </typeHandlers>
+
+  <objectFactory type="org.mybatis.example.ExampleObjectFactory">
+    <property name="someProperty" value="100" />
+  </objectFactory>
+
+  <plugins>
+    <plugin interceptor="org.mybatis.example.ExamplePlugin">
+      <property name="someProperty" value="100" />
+    </plugin>
+  </plugins>
+
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC" />
+      <dataSource type="UNPOOLED">
+        <property name="driver" value="${database.driver}" />
+        <property name="url" value="${database.url}" />
+        <property name="username" value="${database.username}" />
+        <property name="password" value="${database.password}" />
+      </dataSource>
+    </environment>
+  </environments>
+
+  <databaseIdProvider type="DB_VENDOR">
+    <property name="SQL Server" value="sqlserver" />
+    <property name="DB2" value="db2" />
+    <property name="Oracle" value="oracle" />
+  </databaseIdProvider>
+
+  <mappers>
+    <mapper resource="mapper-spittle.xml" />
+    <mapper url="file:///var/mappers/BlogMapper.xml" />
+
+    <mapper class="org.mybatis.builder.PostMapper" />
+    <package name="org.mybatis.builder" />
+  </mappers> -->
+
+</configuration>

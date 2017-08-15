@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <!-- <contextName>clink-download</contextName>
+  <jmxConfigurator /> -->
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <charset>UTF-8</charset>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+    </encoder>
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>INFO</level>
+    </filter>
+  </appender>
+
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <charset>UTF-8</charset>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>log/log.%d{yyyyMMdd}.log</FileNamePattern>
+      <MaxHistory>10</MaxHistory>
+    </rollingPolicy>
+  </appender>
+
+  <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+    <discardingThreshold>0</discardingThreshold>
+    <appender-ref ref="FILE" />
+  </appender>
+  
+  <root level="INFO">
+    <appender-ref ref="ASYNC" />
+    <appender-ref ref="STDOUT" />
+  </root>
+
+</configuration>
