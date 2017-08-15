@@ -10,7 +10,7 @@
 
   <settings>
     <setting name="cacheEnabled" value="false" />
-    <setting name="logImpl" value="SLF4J"/>
+    <!-- <setting name="logImpl" value="SLF4J"/> -->
     <!-- <setting name="lazyLoadingEnabled" value="true" />
     <setting name="multipleResultSetsEnabled" value="true" />
     <setting name="useColumnLabel" value="true" />
@@ -28,8 +28,8 @@
   </settings>
 
   <typeAliases>
-    <typeAlias alias="Spittle" type="spittr.Spittle" />
-    <typeAlias alias="Spitter" type="spittr.Spitter" />
+    <typeAlias alias="Spittle" type="spittr.entity.Spittle" />
+    <typeAlias alias="Spitter" type="spittr.entity.Spitter" />
     <!-- <typeAlias alias="Blog" type="domain.blog.Blog" />
     <typeAlias alias="Comment" type="domain.blog.Comment" />
     <typeAlias alias="Post" type="domain.blog.Post" />

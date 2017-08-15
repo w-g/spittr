@@ -1,6 +1,6 @@
 package spittr.repository.mybatis.mapper;
 
-import spittr.Spitter;
+import spittr.entity.Spitter;
 
 /**
  * spitter mappers

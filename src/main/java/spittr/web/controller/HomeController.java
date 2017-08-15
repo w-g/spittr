@@ -2,6 +2,9 @@ package spittr.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import spittr.FooException;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -12,9 +15,9 @@ public class HomeController {
 	public String home() {
 		return "home";
 	}
-
-	@RequestMapping(value = "/foo", method = RequestMethod.GET)
-	public String foo() {
-		return "foo";
+	
+	@RequestMapping(value = "/make-error", method = RequestMethod.GET)
+	public String Error() {
+		throw new FooException();
 	}
 }

@@ -1,6 +1,6 @@
 package spittr.repository;
 
-import spittr.Spitter;
+import spittr.entity.Spitter;
 
 /**
  * spitter repository interface

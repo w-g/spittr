@@ -1,6 +1,6 @@
 package spittr.repository.mybatis;
 
-import spittr.Spitter;
+import spittr.entity.Spitter;
 import spittr.repository.SpitterRepository;
 import spittr.repository.mybatis.mapper.SpitterMapper;
 

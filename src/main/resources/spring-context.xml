@@ -23,6 +23,8 @@
     <property name="viewClass"
       value="org.springframework.web.servlet.view.JstlView"></property>
   </bean>
+  
+  <bean class="spittr.web.SpittrHandlerExceptionResolver"/>
 
 
   <bean id="dataSource"

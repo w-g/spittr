@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import spittr.Spitter;
+import spittr.entity.Spitter;
 import spittr.service.SpitterService;
 
 @Controller

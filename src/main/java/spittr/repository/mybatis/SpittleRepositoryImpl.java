@@ -2,7 +2,7 @@ package spittr.repository.mybatis;
 
 import java.util.List;
 
-import spittr.Spittle;
+import spittr.entity.Spittle;
 import spittr.repository.SpittleRepository;
 import spittr.repository.mybatis.mapper.SpittleMapper;
 

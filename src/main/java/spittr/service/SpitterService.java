@@ -1,6 +1,6 @@
 package spittr.service;
 
-import spittr.Spitter;
+import spittr.entity.Spitter;
 
 /**
  * spitter repository

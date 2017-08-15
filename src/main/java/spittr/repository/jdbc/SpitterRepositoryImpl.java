@@ -1,8 +1,8 @@
 package spittr.repository.jdbc;
 
-import org.springframework.stereotype.Repository;
+//import org.springframework.stereotype.Repository;
 
-import spittr.Spitter;
+import spittr.entity.Spitter;
 import spittr.repository.SpitterRepository;
 import spittr.utils.JDBCUtils;
 

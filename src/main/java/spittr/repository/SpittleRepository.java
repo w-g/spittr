@@ -2,7 +2,7 @@ package spittr.repository;
 
 import java.util.List;
 
-import spittr.Spittle;
+import spittr.entity.Spittle;
 
 /**
  * spittle repository

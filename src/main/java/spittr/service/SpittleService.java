@@ -1,7 +1,8 @@
 package spittr.service;
 
 import java.util.List;
-import spittr.Spittle;
+
+import spittr.entity.Spittle;
 
 /**
  * spittle repository
